@@ -1,1 +1,0 @@
-const String baseUrl = "http://feeds.ppu.edu/";

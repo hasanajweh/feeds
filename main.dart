@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'screens/login_screen.dart';
 import 'screens/feeds_screen.dart';
@@ -24,8 +26,8 @@ class PPUFeedsApp extends StatelessWidget {
         '/login': (context) => LoginScreen(),
         '/feeds': (context) => FeedsScreen(),
         '/home': (context) => HomeScreen(),
-        '/course_feed': (context) => CourseFeedScreen(),
-        '/comment_feed': (context) => CommentFeedScreen(),
+        '/course_feed': (context) => CourseFeedScreen(courseId:1,sectionId:1 ), 
+        '/comment_feed': (context) => CommentFeedScreen(courseId:1,sectionId:1,postId:1 ),
       },
     );
   }
